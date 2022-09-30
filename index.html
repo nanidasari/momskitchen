@@ -23,10 +23,25 @@
 </head>
 <body>
     
+  <div class="stop">
+    <div id="overlayer">
+    <div class="preloader">
+       <div class="loader">
+          <span class="loader-inner"><img class="lo3" src="elements/ldr.png" alt=""></span>
+       </div>
+       <p class="s">Loading....</p>
+    </div></div>
+  </div></div>
+
+
+
+  <!---------------->
+
+
+  <i onclick="opn()" id="fa" class="fa-sharp fa-solid fa-bars-staggered"></i>
 
     <nav>
-        <h1>MoMsKitChen</h1>
-        <i onclick="opn()" id="fa" class="fa-sharp fa-solid fa-bars-staggered"></i>
+        <img class="log" src="elements/lo.png" alt="">
         <ul class="ull">
             <li class="li"><a class="links" href="">Home</a></li>
             <li class="li"><a class="links" href="#tab">Menu</a></li>
@@ -161,6 +176,20 @@
       <script>
         AOS.init();
       </script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script>
+    $(document).ready(function(){
+    $(".preloader").show()
+    $("#overlayer").show()
+  })
+  $(window).load(function() {
+  $(".preloader").delay(5000).fadeOut("slow");
+  $("#overlayer").delay(5000).fadeOut("slow");
+  })
+
+
+  </script>
       
 </body>
 </html>
